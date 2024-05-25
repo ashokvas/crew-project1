@@ -2,6 +2,10 @@ import streamlit as st
 from main import ResearchCrew  # Import the ResearchCrew class from main.py
 import os
 
+import agentops
+
+agentops.init(c75c9e1f-e607-4d95-a399-b8de9bcce952)
+
 st.title('Your Research Assistant')
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
